@@ -1,85 +1,18 @@
-// Desafio 1
-function compareTrue() {
-  // seu código aqui
-}
-
-// Desafio 2
-function calcArea() {
-  // seu código aqui
-}
-
-// Desafio 3
-function splitSentence() {
-  // seu código aqui
-}
-
-// Desafio 4
-function concatName() {
-  // seu código aqui
-}
-
-// Desafio 5
-function footballPoints() {
-  // seu código aqui
-}
-
-// Desafio 6
-function highestCount() {
-  // seu código aqui
-}
-
-// Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
-
-// Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
-
-// Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
-
-// Desafio 10
-function techList() {
-  // seu código aqui
-}
-
-// Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
-}
-
-// Desafio 12
-function triangleCheck() {
-  // seu código aqui
-}
-
-// Desafio 13
-function hydrate() {
-  // seu código aqui
-}
-
+/* eslint-disable */
 
 module.exports = {
-  calcArea,
-  catAndMouse,
-  compareTrue,
-  concatName,
-  decode,
-  encode,
-  fizzBuzz,
-  footballPoints,
-  generatePhoneNumber,
-  techList,
-  highestCount,
-  hydrate,
-  splitSentence,
-  triangleCheck,
+  calcArea: require('./challenge_2'),
+  catAndMouse: require('./challenge_7'),
+  compareTrue: require('./challenge_1'),
+  concatName: require('./challenge_4'),
+  decode: require('./challenge_9').decode,
+  encode: require('./challenge_9').encode,
+  fizzBuzz: require('./challenge_8'),
+  footballPoints: require('./challenge_5'),
+  generatePhoneNumber: require('./challenge_11'),
+  highestCount: require('./challenge_6'),
+  hydrate: require('./challenge_13'),
+  splitSentence: require('./challenge_3'),
+  techList: require('./challenge_10'),
+  triangleCheck: require('./challenge_12'),
 }
