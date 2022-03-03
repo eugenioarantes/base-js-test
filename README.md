@@ -77,12 +77,6 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 
 ---
 
-### 👀 Observações importantes:
-
-* Para verificar se a sua função foi criada corretamente você pode instalar a extensão `code runner` no _VSCode_.
-
----
-
 **1 - Usando o operador &&**
 -
 JavaScript possui um operador lógico `&&`, o qual recebe dois valores e retorna `true` se ambos os valores são verdadeiros, e retorna `false` se algum dos valores não o for.
@@ -94,7 +88,7 @@ Considerando isso, crie uma função chamada `compareTrue` que, ao receber dois 
 
 Faça a função utilizando o operador `&&`.
 
-**2 - Área do triângulo** 
+**2 - Área do triângulo**
 -
 Escreva uma função com o nome `calcArea` que receba um valor de base (chamado `base`) e outro de altura (chamado `height`) de um triângulo e retorne o cálculo da sua área.
 
@@ -237,7 +231,7 @@ Para tanto, tenha em mente algumas considerações:
 
 Exemplo: o retorno de `triangleCheck(10, 14, 8)` deverá ser `true`.
 
-**13 - Bem vindo ao Bar da Trybe!**
+**13 - Bem vindo ao Bar!**
 -
 Segundo as regras desse bar, a cada bebida deve-se beber um copo de água para que não se tenha ressaca.
 
@@ -290,27 +284,3 @@ String retornada:
   5. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_;
 
   4. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_.
-
----
-
-### DEPOIS DE TERMINAR O DESENVOLVIMENTO - OPCIONAL, PORÉM MUITO IMPORTANTE! <3
-
-Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
-
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
-
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
-
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
-
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-06`.
-
-Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
-
----
-
-### REVISANDO UM PULL REQUEST
-
-Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
-
-#VQV 🚀
