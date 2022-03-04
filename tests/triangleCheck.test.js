@@ -1,4 +1,4 @@
-const challenges = require('../src/challenges2');
+const challenges = require('../src/challenges');
 
 describe('12 - Crie uma função de Condição de existência de um triângulo', () => {
   it('Retorne false quando a medida de qualquer um dos lados seja maior que a soma das medidas dos outros dois', () => {

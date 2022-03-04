@@ -1,8 +1,8 @@
-function compareTrue() {
-  // code here
-  const x = 1;
-
-  return x;
+function compareTrue(valor1, valor2) {
+  if (valor1 && valor2) {
+    return true;
+  }
+  return false;
 }
 
 module.exports = {
