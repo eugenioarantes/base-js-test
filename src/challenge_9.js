@@ -1,42 +1,41 @@
-/* eslint-disable no-plusplus */
+const charToCode = {
+  a: '1',
+  e: '2',
+  i: '3',
+  o: '4',
+  u: '5',
+};
+
 function encode(text) {
-  let result = '';
-  for (let t = 0; t < text.length; t++) {
-    if (text[t] === 'a') {
-      result += '1';
-    } else if (text[t] === 'e') {
-      result += '2';
-    } else if (text[t] === 'i') {
-      result += '3';
-    } else if (text[t] === 'o') {
-      result += '4';
-    } else if (text[t] === 'u') {
-      result += '5';
-    } else {
-      result += text[t];
-    }
+  let encodedText = '';
+
+  for (let t = 0; t < text.length; t += 1) {
+    const char = text[t];
+    const codedChar = charToCode[char];
+
+    encodedText += codedChar || char;
   }
-  return result;
+
+  return encodedText;
 }
 
 function decode(text) {
-  let result = '';
-  for (let t = 0; t < text.length; t++) {
-    if (text[t] === '1') {
-      result += 'a';
-    } else if (text[t] === '2') {
-      result += 'e';
-    } else if (text[t] === '3') {
-      result += 'i';
-    } else if (text[t] === '4') {
-      result += 'o';
-    } else if (text[t] === '5') {
-      result += 'u';
-    } else {
-      result += text[t];
-    }
+  let decodedText = '';
+  const isNumberRegex = /[0-9]/;
+
+  for (let t = 0; t < text.length; t += 1) {
+    const char = text[t];
+
+    if (isNumberRegex.test(char)) {
+      Object.keys(charToCode).forEach((character) => {
+        if (charToCode[character] === char) {
+          decodedText += character;
+        }
+      });
+    } else decodedText += char;
   }
-  return result;
+
+  return decodedText;
 }
 
 module.exports = { encode, decode };

@@ -1,16 +1,30 @@
-/* eslint-disable no-plusplus */
-function generatePhoneNumber(number) {
+function generatePhoneNumber(numbersList) {
   let countList;
-  if (number.length !== 11) {
+  let firstPartOfPhone = '';
+  let secondPartOfPhone = '';
+  let thirdPartOfPhone = '';
+
+  if (numbersList.length !== 11) {
     return 'Array com tamanho incorreto.';
   }
-  for (let n = 0; n < number.length; n++) {
-    countList = number.filter((value) => value === number[n]);
-    if ((number[n] < 0) || (number[n] > 9) || (countList.length >= 3)) {
+
+  for (let numberIndex = 0; numberIndex < numbersList.length; numberIndex += 1) {
+    countList = numbersList.filter((number) => number === numbersList[numberIndex]);
+    if ((numbersList[numberIndex] < 0)
+      || (numbersList[numberIndex] > 9) || (countList.length >= 3)) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
+
+    if ((numberIndex >= 0) && (numberIndex <= 1)) {
+      firstPartOfPhone += numbersList[numberIndex];
+    } else if ((numberIndex >= 2) && (numberIndex <= 6)) {
+      secondPartOfPhone += numbersList[numberIndex];
+    } else {
+      thirdPartOfPhone += numbersList[numberIndex];
+    }
   }
-  return `(${number[0]}${number[1]}) ${number[2]}${number[3]}${number[4]}${number[5]}${number[6]}-${number[7]}${number[8]}${number[9]}${number[10]}`;
+
+  return `(${firstPartOfPhone}) ${secondPartOfPhone}-${thirdPartOfPhone}`;
 }
 
 module.exports = { generatePhoneNumber };
