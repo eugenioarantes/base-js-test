@@ -1,15 +1,15 @@
 # Boas vindas ao repositório do Projeto Playground Functions!
 
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #VQV 🚀
+Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo.
 
 Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma `branch` específica e um _Pull Request_ para colocar seus códigos.
 
 ### 🗒 ANTES DE COMEÇAR A DESENVOLVER:
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-06-project-playground-functions.git`.
+  * `git clone https://github.com/eugenioarantes/base-js-test.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-06-project-playground-functions`
+    * `cd base-js-test`
 
 2. Crie uma branch a partir da branch `master`
   * Verifique que você está na branch `master`
@@ -55,18 +55,6 @@ Todas as funções já estão declaradas no arquivo `challenges.js`. Você pode 
 
 **Os parâmetros das funções já existentes podem e devem ser alterados.**
 
-## Prazo para entrega
-
-O Prazo para entrega é de **7 dias corridos** após o último dia de projeto.
-
-**Exemplo:** Se o último dia de projeto aconteceu na **quarta-feira, dia 17 de junho**, seu prazo final de entrega será na **quarta-feira 24 de junho** às **14 horas**.
-
-Vale ressaltar que os projetos podem ter mais de um dia de duração, por isso o prazo de **7 dias** é contado à partir do último dia de projeto.
-
-## ⚠️ É importante que seus arquivos não tenham o nome alterado! ⚠️
-
-Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://course.betrybe.com/intro/git/) sempre que precisar!
-
 ---
 
 ## Requisitos do projeto
@@ -98,7 +86,7 @@ Lembre-se que a área de um triângulo é calculada através da seguinte fórmul
 -
 Escreva uma função com o nome `splitSentence`, a qual receberá uma string e retornará uma array de strings separadas por cada espaço na string original.
 
-Exemplo: se a função receber a string `"go Trybe"`, o retorno deverá ser `['go', 'Trybe']`.
+Exemplo: se a função receber a string `"hello world"`, o retorno deverá ser `['hello', 'world']`.
 
 **4 - Concatenação de strings**
 -
